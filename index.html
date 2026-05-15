@@ -3,375 +3,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Patel | Aspirational Portfolio</title>
+    <title>Kevin Patel — AI Product Engineering</title>
+    <meta name="description" content="NJIT Information Technology student building toward AI Product Engineering. IT support, Linux, databases, systems.">
+    <meta name="keywords" content="NJIT IT Student, NJ IT Internship, Systems Admin NJ, AI Product Engineer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header class="top-nav">
-    <div>
-        <p class="small-label">Aspirational Professional Portfolio + AI Workflow</p>
-        <h1 class="site-title">Kevin Patel</h1>
-        <p class="nav-subtitle">
-            Building toward AI Product Engineering with IT support, systems, and database experience.
-        </p>
-    </div>
+<!-- Noise overlay -->
+<div class="noise-layer" aria-hidden="true"></div>
 
-    <nav class="nav-buttons">
-        <a href="#start">Start</a>
-        <a href="#path">Build Path</a>
-        <a href="#projects">Projects</a>
+<!-- Ticker tape -->
+<div class="ticker-wrap" aria-label="Skills ticker">
+    <div class="ticker-track">
+        <span>IT SUPPORT</span><span class="dot">◆</span>
+        <span>MariaDB</span><span class="dot">◆</span>
+        <span>Linux / Ubuntu</span><span class="dot">◆</span>
+        <span>PHP</span><span class="dot">◆</span>
+        <span>RabbitMQ</span><span class="dot">◆</span>
+        <span>AI WORKFLOW</span><span class="dot">◆</span>
+        <span>MySQL</span><span class="dot">◆</span>
+        <span>nmap</span><span class="dot">◆</span>
+        <span>SSH / VPN</span><span class="dot">◆</span>
+        <span>NJIT — 2026</span><span class="dot">◆</span>
+        <!-- duplicate for seamless loop -->
+        <span>IT SUPPORT</span><span class="dot">◆</span>
+        <span>MariaDB</span><span class="dot">◆</span>
+        <span>Linux / Ubuntu</span><span class="dot">◆</span>
+        <span>PHP</span><span class="dot">◆</span>
+        <span>RabbitMQ</span><span class="dot">◆</span>
+        <span>AI WORKFLOW</span><span class="dot">◆</span>
+        <span>MySQL</span><span class="dot">◆</span>
+        <span>nmap</span><span class="dot">◆</span>
+        <span>SSH / VPN</span><span class="dot">◆</span>
+        <span>NJIT — 2026</span><span class="dot">◆</span>
+    </div>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="top">
+    <div class="nav-logo">
+        <span class="nav-initials">KP</span>
+        <span class="nav-name">Kevin Patel</span>
+    </div>
+    <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#path">Path</a>
+        <a href="#projects">Work</a>
         <a href="#proof">Proof</a>
-        <a href="#ai">AI Workflow</a>
+        <a href="#workflow">AI</a>
+        <a href="#contact" class="nav-cta">Contact →</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#path">Path</a>
+        <a href="#projects">Work</a>
+        <a href="#proof">Proof</a>
+        <a href="#workflow">AI</a>
         <a href="#contact">Contact</a>
     </nav>
-</header>
+</div>
 
 <main>
 
-<section class="hero panel" id="start">
-    <div class="hero-left">
-        <p class="pill">Entry</p>
-        <p class="small-label">Professional Direction</p>
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="about" aria-labelledby="hero-heading">
+        <div class="hero-meta">
+            <span class="tag">NJIT — Information Technology</span>
+            <span class="tag">NJ / NY Market</span>
+            <span class="tag tag-live"><span class="blink-dot"></span> Available for Internships</span>
+        </div>
 
-        <h2>Build useful systems people can trust.</h2>
+        <h1 class="hero-headline" id="hero-heading">
+            <span class="hl-top">Build</span>
+            <span class="hl-mid">Systems<br><em>People</em></span>
+            <span class="hl-bot">Trust.</span>
+        </h1>
 
-        <p>
-            I am Kevin Patel, an NJIT Information Technology student building my path toward
-            becoming an AI Product Engineer / Applied AI Engineer.
-        </p>
+        <div class="hero-body">
+            <div class="hero-desc">
+                <p>I'm Kevin Patel — NJIT IT student moving toward <strong>AI Product Engineering</strong>. My ground floor is real: IT support desks, Linux terminals, MariaDB schemas, RabbitMQ queues, nmap labs. I use that foundation to build toward intelligent, practical tools.</p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn-primary">View my work</a>
+                    <a href="#contact" class="btn-secondary">Request résumé</a>
+                </div>
+            </div>
+            <div class="hero-stat-block" aria-label="Quick stats">
+                <div class="stat">
+                    <span class="stat-num" data-target="4">0</span>
+                    <span class="stat-label">Projects shipped</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num" data-target="6">0</span>
+                    <span class="stat-label">Core tech areas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num" data-target="3">0</span>
+                    <span class="stat-label">Years support exp.</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Problems to solve</span>
+                </div>
+            </div>
+        </div>
 
-        <p>
-            My background in IT support, Linux, databases, PHP, RabbitMQ, and system troubleshooting
-            helps me understand real user problems. My goal is to grow into a professional who builds
-            practical AI-powered tools that are clear, reliable, and useful.
-        </p>
+        <!-- Decorative grid lines -->
+        <div class="hero-grid-deco" aria-hidden="true">
+            <div class="grid-line gl-1"></div>
+            <div class="grid-line gl-2"></div>
+            <div class="grid-line gl-3"></div>
+        </div>
+    </section>
 
-        <div class="button-row">
-            <a href="#projects" class="dark-button">See my project proof</a>
-            <a href="#ai" class="light-button">See my AI workflow</a>
+    <!-- ═══ MARQUEE DIVIDER ═══ -->
+    <div class="marquee-divider" aria-hidden="true">
+        <div class="marquee-inner">
+            <span>AI PRODUCT ENGINEERING ·</span>
+            <span>APPLIED IT ·</span>
+            <span>SYSTEMS THINKING ·</span>
+            <span>DATABASE DESIGN ·</span>
+            <span>AI PRODUCT ENGINEERING ·</span>
+            <span>APPLIED IT ·</span>
+            <span>SYSTEMS THINKING ·</span>
+            <span>DATABASE DESIGN ·</span>
         </div>
     </div>
 
-    <div class="hero-right card image-card">
-        <p class="small-label">Portfolio Signal Board</p>
-        <h3>Audience → Signal → Proof → Publish</h3>
+    <!-- ═══ BUILD PATH ═══ -->
+    <section class="section path-section" id="path" aria-labelledby="path-heading">
+        <div class="section-header">
+            <p class="eyebrow">01 — Build Path</p>
+            <h2 id="path-heading">How I built this.</h2>
+        </div>
+        <div class="path-steps">
+            <div class="path-step reveal">
+                <span class="step-num">01</span>
+                <div class="step-content">
+                    <h3>Define the Audience</h3>
+                    <p>Recruiters, IT teams, and anyone seeking junior technical talent with real systems depth and AI tool interest.</p>
+                </div>
+            </div>
+            <div class="path-step reveal">
+                <span class="step-num">02</span>
+                <div class="step-content">
+                    <h3>Choose the Signal</h3>
+                    <p>Aspiring AI Product Engineer — grounded in hands-on IT support, not just buzzwords.</p>
+                </div>
+            </div>
+            <div class="path-step reveal">
+                <span class="step-num">03</span>
+                <div class="step-content">
+                    <h3>Pick a Visual Identity</h3>
+                    <p>Editorial-brutalist. Monospaced code energy meets magazine typography. Memorable, not generic.</p>
+                </div>
+            </div>
+            <div class="path-step reveal">
+                <span class="step-num">04</span>
+                <div class="step-content">
+                    <h3>Add Verifiable Proof</h3>
+                    <p>Real IT support logs, database projects, Linux labs, and security coursework — not invented claims.</p>
+                </div>
+            </div>
+            <div class="path-step reveal">
+                <span class="step-num">05</span>
+                <div class="step-content">
+                    <h3>Build in the Open</h3>
+                    <p>HTML, CSS, JavaScript. GitHub Pages. VS Code. Every decision visible in the repository.</p>
+                </div>
+            </div>
+            <div class="path-step reveal">
+                <span class="step-num">06</span>
+                <div class="step-content">
+                    <h3>Ship and Iterate</h3>
+                    <p>Published live. README documented. Portfolio treated as a living system, not a one-time submission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="mini-tags">
-            <span>IT Support</span>
-            <span>Databases</span>
-            <span>Linux</span>
-            <span>AI Workflow</span>
+    <!-- ═══ DIRECTION SPLIT ═══ -->
+    <section class="direction-split section" aria-labelledby="direction-heading">
+        <div class="direction-label">
+            <p class="eyebrow">Professional Direction</p>
+            <h2 id="direction-heading">Why AI Product Engineering?</h2>
+        </div>
+        <div class="direction-cards">
+            <div class="dir-card dir-card--dark reveal">
+                <p class="dir-card-eyebrow">The Role</p>
+                <h3>Applied problem-solving with AI and software</h3>
+                <p>Plan features. Write code. Connect tools. Test ideas. Improve workflows. Build for real users — not demos.</p>
+                <ul class="dir-list">
+                    <li>→ Feature planning and product thinking</li>
+                    <li>→ Backend + AI integration</li>
+                    <li>→ User-facing workflow automation</li>
+                    <li>→ Iterative deployment</li>
+                </ul>
+            </div>
+            <div class="dir-card dir-card--accent reveal">
+                <p class="dir-card-eyebrow">Why It Fits Me</p>
+                <h3>My starting point is real technical support</h3>
+                <p>IT support taught me how users actually break things. That makes me think about AI tools practically — not abstractly. I've been in the room when tech fails. I know what actually matters.</p>
+                <div class="dir-quote">
+                    <span class="quote-mark">"</span>
+                    I don't want to build AI for the demo.<br>I want to build it for the desk.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+        <div class="section-header">
+            <p class="eyebrow">02 — Selected Work</p>
+            <h2 id="projects-heading">The work I'm building.</h2>
         </div>
 
-        <p>
-            This portfolio is not about pretending I am already an expert. It shows the professional
-            direction I am working toward and the kind of systems I want to build.
-        </p>
-    </div>
-</section>
+        <!-- Card Stack Carousel -->
+        <div class="stack-carousel" role="region" aria-label="Project cards" aria-live="polite">
 
-<section class="section-intro">
-    <p class="small-label">Build Path</p>
-    <h2>My portfolio follows a clear 6-step path.</h2>
-    <p>
-        I used the course design system idea of planning before building. Each step helped me make
-        the site more focused, realistic, and professional.
-    </p>
-</section>
+            <!-- Deck -->
+            <div class="stack-deck" id="stackDeck">
 
-<section class="path-grid" id="path">
-    <div class="path-card">
-        <span class="number">1</span>
-        <h3>Figure out who it is for</h3>
-        <p>
-            My audience is recruiters, IT teams, and people looking for junior technical talent
-            with systems knowledge and interest in AI-powered tools.
-        </p>
-    </div>
+                <article class="stack-card" data-index="0" aria-label="Food Pantry System">
+                    <div class="stack-card-top">
+                        <span class="project-tag project-tag--live">In Development</span>
+                        <span class="stack-card-num">01 / 04</span>
+                    </div>
+                    <h3 class="stack-card-title">Food Pantry<br>System</h3>
+                    <p class="stack-card-desc">Tracks pantry items, monitors expiration dates, and fires recipe suggestions through a RabbitMQ message queue. Real backend logic, real data design.</p>
+                    <div class="stack-card-stack">
+                        <span>MariaDB</span><span>PHP</span><span>Python</span><span>RabbitMQ</span>
+                    </div>
+                    <div class="stack-card-footer">
+                        <span class="stack-card-type">Capstone / Full-Stack</span>
+                        <span class="stack-drag-hint">drag or click → to advance</span>
+                    </div>
+                    <div class="stack-card-deco" aria-hidden="true">◆</div>
+                </article>
 
-    <div class="path-card">
-        <span class="number">2</span>
-        <h3>Pick the professional signal</h3>
-        <p>
-            My signal is Aspiring AI Product Engineer with a real IT support and systems background.
-        </p>
-    </div>
+                <article class="stack-card" data-index="1" aria-label="Gas Price Manager">
+                    <div class="stack-card-top">
+                        <span class="project-tag">Course Project</span>
+                        <span class="stack-card-num">02 / 04</span>
+                    </div>
+                    <h3 class="stack-card-title">Gas Price<br>Manager</h3>
+                    <p class="stack-card-desc">PHP + MySQL web app with admin-side CRUD, user fuel views, price calculations, and input validation. Full database-driven application built from scratch.</p>
+                    <div class="stack-card-stack">
+                        <span>PHP</span><span>MySQL</span><span>CRUD</span><span>Admin UX</span>
+                    </div>
+                    <div class="stack-card-footer">
+                        <span class="stack-card-type">Web Application</span>
+                        <span class="stack-drag-hint">drag or click → to advance</span>
+                    </div>
+                    <div class="stack-card-deco" aria-hidden="true">◆</div>
+                </article>
 
-    <div class="path-card">
-        <span class="number">3</span>
-        <h3>Choose the look</h3>
-        <p>
-            I chose a calm cream and green design with rounded cards because it feels clean,
-            serious, and easy to read.
-        </p>
-    </div>
+                <article class="stack-card" data-index="2" aria-label="AI Help Desk Assistant">
+                    <div class="stack-card-top">
+                        <span class="project-tag project-tag--concept">Future Concept</span>
+                        <span class="stack-card-num">03 / 04</span>
+                    </div>
+                    <h3 class="stack-card-title">AI Help Desk<br>Assistant</h3>
+                    <p class="stack-card-desc">Guided AI tool for students and staff: Wi-Fi setup, Outlook config, identity claim, classroom tech recovery. Turns IT support knowledge into an intelligent system.</p>
+                    <div class="stack-card-stack">
+                        <span>IT Support</span><span>AI Planning</span><span>UX Flow</span>
+                    </div>
+                    <div class="stack-card-footer">
+                        <span class="stack-card-type">AI Tool Concept</span>
+                        <span class="stack-drag-hint">drag or click → to advance</span>
+                    </div>
+                    <div class="stack-card-deco" aria-hidden="true">◆</div>
+                </article>
 
-    <div class="path-card">
-        <span class="number">4</span>
-        <h3>Add proof people can trust</h3>
-        <p>
-            I used proof from IT support work, database projects, Linux practice, security labs,
-            and capstone-style system design.
-        </p>
-    </div>
+                <article class="stack-card" data-index="3" aria-label="Student Study Assistant">
+                    <div class="stack-card-top">
+                        <span class="project-tag project-tag--concept">Future Concept</span>
+                        <span class="stack-card-num">04 / 04</span>
+                    </div>
+                    <h3 class="stack-card-title">Student Study<br>Assistant</h3>
+                    <p class="stack-card-desc">Organizes notes, summarizes class material, generates study plans — while keeping the student in control of their own learning. Responsible AI design.</p>
+                    <div class="stack-card-stack">
+                        <span>AI Workflow</span><span>Product Thinking</span><span>Frontend</span>
+                    </div>
+                    <div class="stack-card-footer">
+                        <span class="stack-card-type">EdTech Concept</span>
+                        <span class="stack-drag-hint">drag or click → to advance</span>
+                    </div>
+                    <div class="stack-card-deco" aria-hidden="true">◆</div>
+                </article>
 
-    <div class="path-card">
-        <span class="number">5</span>
-        <h3>Turn it into a page</h3>
-        <p>
-            I built the portfolio using HTML, CSS, JavaScript, GitHub, VS Code, and GitHub Pages.
-        </p>
-    </div>
+            </div><!-- /stack-deck -->
 
-    <div class="path-card">
-        <span class="number">6</span>
-        <h3>Put it live</h3>
-        <p>
-            I published the project on GitHub Pages and included the hosted site link in my README.
-        </p>
-    </div>
-</section>
+            <!-- Controls -->
+            <div class="stack-controls">
+                <button class="stack-btn stack-btn--prev" id="stackPrev" aria-label="Previous project">
+                    ← Prev
+                </button>
+                <div class="stack-dots" id="stackDots" role="tablist" aria-label="Project navigation">
+                    <button class="stack-dot active" role="tab" aria-selected="true"  aria-label="Project 1" data-dot="0"></button>
+                    <button class="stack-dot"        role="tab" aria-selected="false" aria-label="Project 2" data-dot="1"></button>
+                    <button class="stack-dot"        role="tab" aria-selected="false" aria-label="Project 3" data-dot="2"></button>
+                    <button class="stack-dot"        role="tab" aria-selected="false" aria-label="Project 4" data-dot="3"></button>
+                </div>
+                <button class="stack-btn stack-btn--next" id="stackNext" aria-label="Next project">
+                    Next →
+                </button>
+            </div>
 
-<section class="section-intro">
-    <p class="small-label">Professional Direction</p>
-    <h2>I want to become an AI Product Engineer.</h2>
-    <p>
-        This role connects software development, product thinking, user needs, automation, and AI tools.
-        I chose this direction because I want to build practical systems that help people solve real problems.
-    </p>
-</section>
+        </div><!-- /stack-carousel -->
+    </section>
 
-<section class="two-column">
-    <div class="card soft-green">
-        <p class="small-label">What this role does</p>
-        <h3>Applied problem-solving with AI and software</h3>
-        <p>
-            An AI Product Engineer works on products that use AI in a useful way. The work can include
-            planning features, writing code, testing ideas, connecting tools, improving workflows,
-            and making sure the product makes sense for real users.
-        </p>
-    </div>
+    <!-- ═══ PROOF ═══ -->
+    <section class="section proof-section" id="proof" aria-labelledby="proof-heading">
+        <div class="section-header">
+            <p class="eyebrow">03 — Verified Experience</p>
+            <h2 id="proof-heading">Not buzzwords. Background.</h2>
+        </div>
 
-    <div class="card soft-blue">
-        <p class="small-label">Why it fits me</p>
-        <h3>My starting point is real technical support</h3>
-        <p>
-            My IT support experience taught me how users actually struggle with technology. That helps
-            me think about AI tools in a practical way, not just as something new or flashy.
-        </p>
-    </div>
-</section>
+        <div class="proof-grid">
+            <div class="proof-item reveal">
+                <div class="proof-icon" aria-hidden="true">⌨</div>
+                <div class="proof-content">
+                    <h3>IT Support</h3>
+                    <p>Classroom tech. Professor computers. Wi-Fi. Auth setup. Live class recovery. Real users, real stakes, real fixes.</p>
+                    <span class="proof-tag">Field Experience</span>
+                </div>
+            </div>
+            <div class="proof-item reveal">
+                <div class="proof-icon" aria-hidden="true">🗄</div>
+                <div class="proof-content">
+                    <h3>Databases</h3>
+                    <p>MySQL and MariaDB tables, users, permissions, PHP connections, and backend data flows. Schema design included.</p>
+                    <span class="proof-tag">MySQL · MariaDB · SQL</span>
+                </div>
+            </div>
+            <div class="proof-item reveal">
+                <div class="proof-icon" aria-hidden="true">🐧</div>
+                <div class="proof-content">
+                    <h3>Linux & Systems</h3>
+                    <p>Ubuntu terminal workflows, service management, VM configuration, SSH access, VPN setups.</p>
+                    <span class="proof-tag">Ubuntu · VM · SSH</span>
+                </div>
+            </div>
+            <div class="proof-item reveal">
+                <div class="proof-icon" aria-hidden="true">🔍</div>
+                <div class="proof-content">
+                    <h3>Security Labs</h3>
+                    <p>nmap host discovery, port scanning, service enumeration. Understanding what's exposed and why it matters.</p>
+                    <span class="proof-tag">nmap · Networking</span>
+                </div>
+            </div>
+        </div>
 
-<section class="section-intro" id="projects">
-    <p class="small-label">Project Proof</p>
-    <h2>Swipe through the work I am building toward.</h2>
-    <p>
-        These cards show completed work, current work, and realistic future concepts that match my
-        professional direction.
-    </p>
-</section>
+        <!-- Skills table -->
+        <div class="skills-block reveal">
+            <h3 class="skills-block-title">Full Skills Inventory</h3>
+            <div class="skills-table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Area</th>
+                            <th scope="col">Tools / Skills</th>
+                            <th scope="col">Why It Matters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="td-area">Web</span></td>
+                            <td>HTML, CSS, JavaScript, PHP</td>
+                            <td>Build user-facing systems and portfolio projects.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="td-area">Database</span></td>
+                            <td>MySQL, MariaDB, SQL</td>
+                            <td>Manage real data and build useful applications.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="td-area">Systems</span></td>
+                            <td>Linux, Ubuntu, VMs, SSH, VPN</td>
+                            <td>Understand infrastructure and service environments.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="td-area">Messaging</span></td>
+                            <td>RabbitMQ</td>
+                            <td>Build async, event-driven backend workflows.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="td-area">AI Workflow</span></td>
+                            <td>Prompting, revision, planning</td>
+                            <td>Use AI carefully as part of a professional process.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-<section class="swipe-section">
-    <div class="swipe-card active">
-        <p class="small-label">Completed / In Development</p>
-        <h3>Food Pantry System</h3>
-        <p>
-            A system that helps users manage pantry items, track expiration dates, and receive recipe
-            suggestions. It connects database design, backend logic, RabbitMQ messaging, and user-focused features.
-        </p>
-        <p>
-            <strong>Skills shown:</strong> MariaDB, PHP, Python, RabbitMQ, database design, system planning.
-        </p>
-    </div>
+    <!-- ═══ AI WORKFLOW ═══ -->
+    <section class="section workflow-section" id="workflow" aria-labelledby="workflow-heading">
+        <div class="section-header">
+            <p class="eyebrow">04 — AI Workflow</p>
+            <h2 id="workflow-heading">AI as a tool, not a crutch.</h2>
+        </div>
+        <p class="workflow-intro">I used AI to research, organize, draft, and design. The judgment calls — what to keep, what to cut, what sounds like me — were mine.</p>
 
-    <div class="swipe-card">
-        <p class="small-label">Future Concept</p>
-        <h3>AI IT Help Desk Assistant</h3>
-        <p>
-            A guided assistant that helps students and staff troubleshoot common issues such as Wi-Fi setup,
-            Outlook setup, identity claim, and classroom technology problems.
-        </p>
-        <p>
-            <strong>Skills shown:</strong> IT support, AI workflow planning, troubleshooting, user communication.
-        </p>
-    </div>
+        <div class="workflow-steps">
+            <div class="wf-step reveal" style="--i:0">
+                <div class="wf-step-header">
+                    <span class="wf-num">01</span>
+                    <h3>Research</h3>
+                </div>
+                <p>Explored professional paths — AI Product Engineer, Applied AI Engineer, Systems Engineer — to understand where my background fits.</p>
+            </div>
+            <div class="wf-step reveal" style="--i:1">
+                <div class="wf-step-header">
+                    <span class="wf-num">02</span>
+                    <h3>Plan</h3>
+                </div>
+                <p>Mapped the site structure before writing a single line. Sections follow a logical recruiting journey: context → proof → contact.</p>
+            </div>
+            <div class="wf-step reveal" style="--i:2">
+                <div class="wf-step-header">
+                    <span class="wf-num">03</span>
+                    <h3>Draft</h3>
+                </div>
+                <p>Used AI to rough-draft wording for professional identity, project descriptions, and skill framing.</p>
+            </div>
+            <div class="wf-step reveal" style="--i:3">
+                <div class="wf-step-header">
+                    <span class="wf-num">04</span>
+                    <h3>Revise</h3>
+                </div>
+                <p>Rewrote everything that didn't sound like me or didn't connect to actual experience. AI draft ≠ final copy.</p>
+            </div>
+            <div class="wf-step reveal" style="--i:4">
+                <div class="wf-step-header">
+                    <span class="wf-num">05</span>
+                    <h3>Build</h3>
+                </div>
+                <p>HTML, CSS, JavaScript, VS Code. Every element coded and reviewed manually before committing.</p>
+            </div>
+            <div class="wf-step reveal" style="--i:5">
+                <div class="wf-step-header">
+                    <span class="wf-num">06</span>
+                    <h3>Publish</h3>
+                </div>
+                <p>GitHub Pages deployment. README documents the full workflow so the process itself is part of the proof.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="swipe-card">
-        <p class="small-label">Future Concept</p>
-        <h3>Student Study Assistant</h3>
-        <p>
-            A tool that helps students organize notes, summarize class material, and create study plans.
-            The goal is to use AI as a helper while keeping the student responsible for learning.
-        </p>
-        <p>
-            <strong>Skills shown:</strong> responsible AI use, product thinking, frontend planning.
-        </p>
-    </div>
-
-    <div class="swipe-card">
-        <p class="small-label">Course Project</p>
-        <h3>Gas Price Management System</h3>
-        <p>
-            A PHP and MySQL web application that manages gas price data, supports admin-side records,
-            and helps users view or calculate gas purchases based on selected fuel types.
-        </p>
-        <p>
-            <strong>Skills shown:</strong> PHP, MySQL, CRUD operations, admin pages, user views, and validation.
-        </p>
-    </div>
-
-    <div class="swipe-controls">
-        <button id="prevCard" class="light-button">← Previous</button>
-        <span id="cardCounter">1 / 4</span>
-        <button id="nextCard" class="dark-button">Next →</button>
-    </div>
-</section>
-
-<section class="section-intro" id="proof">
-    <p class="small-label">Proof People Can Trust</p>
-    <h2>My background gives this portfolio a realistic foundation.</h2>
-</section>
-
-<section class="proof-grid">
-    <div class="card">
-        <p class="small-label">IT Support</p>
-        <h3>Real user troubleshooting</h3>
-        <p>
-            I have supported classroom technology, professor computers, Wi-Fi issues, authentication setup,
-            and live class technology problems.
-        </p>
-    </div>
-
-    <div class="card">
-        <p class="small-label">Databases</p>
-        <h3>MySQL and MariaDB</h3>
-        <p>
-            I have worked with database tables, users, permissions, PHP connections, and backend data flows.
-        </p>
-    </div>
-
-    <div class="card">
-        <p class="small-label">Systems</p>
-        <h3>Linux, VMs, and services</h3>
-        <p>
-            I have practiced working in Ubuntu, using terminal commands, managing services, and working with VMs.
-        </p>
-    </div>
-
-    <div class="card">
-        <p class="small-label">Security</p>
-        <h3>Networking and nmap labs</h3>
-        <p>
-            I have used nmap and security coursework to understand host discovery, ports, scanning, and basic system exposure.
-        </p>
-    </div>
-</section>
-
-<section class="section-intro" id="ai">
-    <p class="small-label">AI Workflow</p>
-    <h2>I used AI as a workflow tool, not as a shortcut.</h2>
-    <p>
-        AI helped me research, organize, write, revise, and design. I still made the final decisions
-        about what fit my background and professional direction.
-    </p>
-</section>
-
-<section class="workflow-panel panel">
-    <div class="workflow-card">
-        <span>1</span>
-        <h3>Research</h3>
-        <p>I used AI to explore professional paths like AI Product Engineer and Applied AI Engineer.</p>
-    </div>
-
-    <div class="workflow-card">
-        <span>2</span>
-        <h3>Plan</h3>
-        <p>I planned the sections before building so the site would not feel random.</p>
-    </div>
-
-    <div class="workflow-card">
-        <span>3</span>
-        <h3>Draft</h3>
-        <p>I used AI to draft rough wording for my professional identity, projects, and skills.</p>
-    </div>
-
-    <div class="workflow-card">
-        <span>4</span>
-        <h3>Revise</h3>
-        <p>I changed the wording to make it sound like me and connect it to my real experience.</p>
-    </div>
-
-    <div class="workflow-card">
-        <span>5</span>
-        <h3>Build</h3>
-        <p>I used HTML, CSS, JavaScript, and VS Code to create the portfolio page.</p>
-    </div>
-
-    <div class="workflow-card">
-        <span>6</span>
-        <h3>Publish</h3>
-        <p>I published the portfolio using GitHub Pages and documented the project in the README.</p>
-    </div>
-</section>
-
-<section class="skills-table">
-    <p class="small-label">Skills and Tools</p>
-    <h2>What I am developing</h2>
-
-    <table>
-        <tr>
-            <th>Area</th>
-            <th>Tools / Skills</th>
-            <th>Why it matters</th>
-        </tr>
-
-        <tr>
-            <td>Web</td>
-            <td>HTML, CSS, JavaScript, PHP</td>
-            <td>Helps me build user-facing systems and portfolio projects.</td>
-        </tr>
-
-        <tr>
-            <td>Database</td>
-            <td>MySQL, MariaDB, SQL</td>
-            <td>Helps me manage real data and build useful applications.</td>
-        </tr>
-
-        <tr>
-            <td>Systems</td>
-            <td>Linux, Ubuntu, VMs, SSH, VPN</td>
-            <td>Helps me understand infrastructure and service environments.</td>
-        </tr>
-
-        <tr>
-            <td>AI Workflow</td>
-            <td>Prompting, revision, planning, image ideas</td>
-            <td>Helps me use AI carefully as part of a professional process.</td>
-        </tr>
-    </table>
-</section>
-
-<section class="contact panel" id="contact">
-    <p class="small-label">Contact</p>
-    <h2>Let’s connect.</h2>
-
-    <p>
-        I am interested in IT support, junior systems roles, database work, and future AI product
-        engineering opportunities.
-    </p>
-
-    <button id="resumeBtn" class="dark-button">Request My Technical Resume</button>
-</section>
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-inner">
+            <p class="eyebrow">05 — Contact</p>
+            <h2 id="contact-heading">Let's build something.</h2>
+            <p>I'm looking for IT support roles, junior systems positions, database work, and AI product engineering internships in the NJ/NY market.</p>
+            <div class="contact-actions">
+                <button class="btn-primary" id="resumeBtn">Request My Technical Résumé</button>
+                <a href="https://github.com/KevinPatel483/career-engineered-portfolio" target="_blank" rel="noopener" class="btn-secondary">View GitHub →</a>
+            </div>
+            <div class="contact-info">
+                <span>NJIT — Information Technology</span>
+                <span class="sep">·</span>
+                <span>Newark, NJ</span>
+                <span class="sep">·</span>
+                <span>2026</span>
+            </div>
+        </div>
+        <!-- Large decorative text -->
+        <div class="contact-bg-text" aria-hidden="true">KEVIN<br>PATEL</div>
+    </section>
 
 </main>
 
-<footer>
-    <p>© 2026 Kevin Patel | NJIT Information Technology Student</p>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p>© 2026 Kevin Patel · NJIT Information Technology</p>
+        <div class="footer-links">
+            <a href="#top">↑ Back to top</a>
+            <a href="https://github.com/KevinPatel483" target="_blank" rel="noopener">GitHub</a>
+        </div>
+    </div>
 </footer>
 
-<script src="script.js"></script>
+<!-- Resume modal -->
+<div class="modal-overlay" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume request" hidden>
+    <div class="modal-box">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+        <p class="modal-eyebrow">Resume Request</p>
+        <h3>Let's connect.</h3>
+        <p>Email Kevin directly to request the technical résumé:</p>
+        <a href="mailto:pk612562@gmail.com" class="modal-email">pk612562@gmail.com</a>
+        <p class="modal-note">Response within 24 hours. Include your name and company.</p>
+    </div>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>
